@@ -1,3 +1,17 @@
+Installation:
+=============
+
+Using PyPI and pip:
+
+    pip install pygments-style-railscasts
+
+Manual installation:
+
+    git clone git://github.com/DrMegahertz/pygments-style-railscasts.git
+    cd pygments-style-railscasts
+    python setup.py install
+
+
 Usage example:
 ==============
 
