@@ -3,27 +3,27 @@
 from setuptools import setup
 
 setup(
-    name = 'pygments-style-railscasts',
-    version = '0.3',
-    description = 'Pygments version of the "railscasts" vim theme.',
-    license = 'BSD',
+    name = 'pygments-style-material',
+    version = '0.1',
+    description = 'Pygments version of material theme.',
+    license = 'GPL3',
 
-    author = 'Marcus Fredriksson',
-    author_email = 'drmegahertz@gmail.com',
+    author = 'Grigorii Horos',
+    author_email = 'horosgrisa@gmail.com',
 
-    url = 'https://github.com/DrMegahertz/pygments-style-railscasts',
+    url = 'https://github.com/horosgrisa/pygments-style-material',
 
-    packages = ['pygments_style_railscasts'],
+    packages = ['pygments_style_material'],
     install_requires = ['pygments >= 1.4'],
 
     entry_points = '''[pygments.styles]
-                      railscasts = pygments_style_railscasts:RailscastsStyle''',
+                      material = pygments_style_material:MaterialStyle''',
 
     classifiers = [
-        'Development Status :: 4 - Beta',
+        'Development Status :: 1 - Beta',
         'Environment :: Plugins',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
+        'License :: OSI Approved :: GPL3 License',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',

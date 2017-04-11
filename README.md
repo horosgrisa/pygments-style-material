@@ -3,12 +3,12 @@ Installation:
 
 Using PyPI and pip:
 
-    pip install pygments-style-railscasts
+    pip install pygments-style-material
 
 Manual installation:
 
-    git clone git://github.com/DrMegahertz/pygments-style-railscasts.git
-    cd pygments-style-railscasts
+    git clone git://github.com/horosgrisa/pygments-style-material.git
+    cd pygments-style-material
     python setup.py install
 
 
@@ -16,14 +16,14 @@ Usage example:
 ==============
 
     >>> from pygments.formatters import HtmlFormatter
-    >>> HtmlFormatter(style='railscasts').style
-    <class 'pygments_style_railscasts.RailscastsStyle'>
+    >>> HtmlFormatter(style='material').style
+    <class 'pygments_style_material.MaterialStyle'>
 
 
 Export the style as CSS:
 ========================
 
-    pygmentize -S railscasts -f html > railscasts.css
+    pygmentize -S material -f html > material.css
 
 
 Please read the [official documentation][pygments] for further information
