@@ -75,11 +75,11 @@ class MaterialStyle(Style):
       Error:                  RED,                  # red    ; class: 'err'
       Other:                  LIGHT_BLUE,           # light_blue  ; class: 'x'
 
-      Comment:                'italic '+LIGHT_GREEN, # light_green ; class: 'c'
-      Comment.Multiline:      'italic '+LIGHT_GREEN, # light_green ; class: 'cm'
-      Comment.Preproc:        'italic '+LIGHT_GREEN, # light_green ; class: 'cp'
-      Comment.Single:         'italic '+LIGHT_GREEN, # light_green ; class: 'c1'
-      Comment.Special:        'italic '+LIGHT_GREEN, # light_green ; class: 'cs'
+      Comment:                'italic '+LIGHT_BLACK, # light_black ; class: 'c'
+      Comment.Multiline:      'italic '+LIGHT_BLACK, # light_black ; class: 'cm'
+      Comment.Preproc:        'italic '+LIGHT_BLACK, # light_black ; class: 'cp'
+      Comment.Single:         'italic '+LIGHT_BLACK, # light_black ; class: 'c1'
+      Comment.Special:        'italic '+LIGHT_BLACK, # light_black ; class: 'cs'
 
       Keyword:                GREEN,                 # green  ; class: 'k'
       Keyword.Constant:       GREEN,                 # green  ; class: 'kc'
