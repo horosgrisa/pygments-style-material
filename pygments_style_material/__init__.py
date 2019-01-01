@@ -14,7 +14,28 @@ from pygments.token import Comment, Error, Generic, Keyword, Other, Whitespace, 
     Punctuation, String, Text
 
 
+"""
 
+BASE03 LIGHT_BLACK = "#1c1c1c"
+BASE02 = "#262626"
+BASE01 LIGHT_GREEN = "#4e4e4e"
+BASE00 = "#585858"
+BASE0 LIGHT_BLUE = "#808080"
+BASE1 = "#8a8a8a"
+BASE2 = "#d7d7af"
+BASE3 = "#ffffd7"
+
+YELLOW = "#af8700"
+ORANGE = "#d75f00"
+RED = "#af0000"
+MAGENTA = "#af005f"
+VIOLET = "#5f5faf"
+BLUE = "#0087ff"
+CYAN = "#00afaf"
+GREEN = "#5f8700"
+
+
+"""
 
 BLACK = "#435B67"
 RED = "#EF5350"
@@ -49,16 +70,16 @@ class MaterialStyle(Style):
   highlight_color = HIGHLIGHT_COLOR
 
   styles = {
-      Text:                   LIGHT_BLACK,          # base0  ; class: ''
-      Whitespace:             BLACK,                # base03 ; class: 'w'
+      Text:                   LIGHT_BLUE,           # light_blue  ; class: ''
+      Whitespace:             LIGHT_BLACK,          # light_black ; class: 'w'
       Error:                  RED,                  # red    ; class: 'err'
-      Other:                  LIGHT_BLACK,          # base0  ; class: 'x'
+      Other:                  LIGHT_BLUE,           # light_blue  ; class: 'x'
 
-      Comment:                'italic '+GREY,      # base01 ; class: 'c'
-      Comment.Multiline:      'italic '+GREY,      # base01 ; class: 'cm'
-      Comment.Preproc:        'italic '+GREY,      # base01 ; class: 'cp'
-      Comment.Single:         'italic '+GREY,      # base01 ; class: 'c1'
-      Comment.Special:        'italic '+GREY,      # base01 ; class: 'cs'
+      Comment:                'italic '+LIGHT_GREEN, # light_green ; class: 'c'
+      Comment.Multiline:      'italic '+LIGHT_GREEN, # light_green ; class: 'cm'
+      Comment.Preproc:        'italic '+LIGHT_GREEN, # light_green ; class: 'cp'
+      Comment.Single:         'italic '+LIGHT_GREEN, # light_green ; class: 'c1'
+      Comment.Special:        'italic '+LIGHT_GREEN, # light_green ; class: 'cs'
 
       Keyword:                GREEN,                 # green  ; class: 'k'
       Keyword.Constant:       GREEN,                 # green  ; class: 'kc'
@@ -68,11 +89,11 @@ class MaterialStyle(Style):
       Keyword.Reserved:       GREEN,                 # green  ; class: 'kr'
       Keyword.Type:           GREEN,                 # green  ; class: 'kt'
 
-      Operator:               LIGHT_BLACK,           # base0  ; class: 'o'
+      Operator:               LIGHT_BLUE,            # light_blue  ; class: 'o'
       Operator.Word:          GREEN,                 # green  ; class: 'ow'
 
-      Name:                   GREY,                  # base1  ; class: 'n'
-      Name.Attribute:         LIGHT_BLACK,           # base0  ; class: 'na'
+      Name:                   LIGHT_GREEN,           # light_green  ; class: 'n'
+      Name.Attribute:         LIGHT_BLUE,            # light_blue  ; class: 'na'
       Name.Builtin:           BLUE,                  # blue   ; class: 'nb'
       Name.Builtin.Pseudo:    'bold '+BLUE,          # blue   ; class: 'bp'
       Name.Class:             BLUE,                  # blue   ; class: 'nc'
@@ -82,9 +103,9 @@ class MaterialStyle(Style):
       Name.Exception:         ORANGE,                # orange ; class: 'ne'
       Name.Function:          BLUE,                  # blue   ; class: 'nf'
       Name.Property:          BLUE,                  # blue   ; class: 'py'
-      Name.Label:             LIGHT_BLACK,           # base0  ; class: 'nc'
+      Name.Label:             LIGHT_BLUE,            # light_blue  ; class: 'nc'
       Name.Namespace:         PURPLE,                # purple ; class: 'nn'
-      Name.Other:             LIGHT_BLACK,           # base0  ; class: 'nx'
+      Name.Other:             LIGHT_BLUE,            # light_blue  ; class: 'nx'
       Name.Tag:               GREEN,                 # green  ; class: 'nt'
       Name.Variable:          ORANGE,                # orange ; class: 'nv'
       Name.Variable.Class:    BLUE,                  # blue   ; class: 'vc'
@@ -98,10 +119,10 @@ class MaterialStyle(Style):
       Number.Integer.Long:    CYAN,                  # cyan   ; class: 'il'
       Number.Oct:             CYAN,                  # cyan   ; class: 'mo'
 
-      Literal:                LIGHT_BLACK,           # base0  ; class: 'l'
-      Literal.Date:           LIGHT_BLACK,           # base0  ; class: 'ld'
+      Literal:                LIGHT_BLUE,            # light_blue  ; class: 'l'
+      Literal.Date:           LIGHT_BLUE,            # light_blue  ; class: 'ld'
 
-      Punctuation:            LIGHT_BLACK,           # base0  ; class: 'p'
+      Punctuation:            LIGHT_BLUE,            # light_blue  ; class: 'p'
 
       String:                 CYAN,                  # cyan   ; class: 's'
       String.Backtick:        CYAN,                  # cyan   ; class: 'sb'
@@ -116,15 +137,15 @@ class MaterialStyle(Style):
       String.Single:          CYAN,                  # cyan   ; class: 's1'
       String.Symbol:          CYAN,                  # cyan   ; class: 'ss'
 
-      Generic:                LIGHT_BLACK,           # base0  ; class: 'g'
-      Generic.Deleted:        LIGHT_BLACK,           # base0  ; class: 'gd'
-      Generic.Emph:           LIGHT_BLACK,           # base0  ; class: 'ge'
-      Generic.Error:          LIGHT_BLACK,           # base0  ; class: 'gr'
-      Generic.Heading:        LIGHT_BLACK,           # base0  ; class: 'gh'
-      Generic.Inserted:       LIGHT_BLACK,           # base0  ; class: 'gi'
-      Generic.Output:         LIGHT_BLACK,           # base0  ; class: 'go'
-      Generic.Prompt:         LIGHT_BLACK,           # base0  ; class: 'gp'
-      Generic.Strong:         LIGHT_BLACK,           # base0  ; class: 'gs'
-      Generic.Subheading:     LIGHT_BLACK,           # base0  ; class: 'gu'
-      Generic.Traceback:      LIGHT_BLACK,           # base0  ; class: 'gt'
+      Generic:                LIGHT_BLUE,            # light_blue  ; class: 'g'
+      Generic.Deleted:        LIGHT_BLUE,            # light_blue  ; class: 'gd'
+      Generic.Emph:           LIGHT_BLUE,            # light_blue  ; class: 'ge'
+      Generic.Error:          LIGHT_BLUE,            # light_blue  ; class: 'gr'
+      Generic.Heading:        LIGHT_BLUE,            # light_blue  ; class: 'gh'
+      Generic.Inserted:       LIGHT_BLUE,            # light_blue  ; class: 'gi'
+      Generic.Output:         LIGHT_BLUE,            # light_blue  ; class: 'go'
+      Generic.Prompt:         LIGHT_BLUE,            # light_blue  ; class: 'gp'
+      Generic.Strong:         LIGHT_BLUE,            # light_blue  ; class: 'gs'
+      Generic.Subheading:     LIGHT_BLUE,            # light_blue  ; class: 'gu'
+      Generic.Traceback:      LIGHT_BLUE,            # light_blue  ; class: 'gt'
   }
